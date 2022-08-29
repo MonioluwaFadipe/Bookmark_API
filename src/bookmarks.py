@@ -5,7 +5,7 @@ from .constants.http_status_codes import HTTP_200_OK, HTTP_201_CREATED, HTTP_204
 import validators
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from src.database import Bookmark, db
-from flasgger import swag_from()
+from flasgger import swag_from
 
 bookmarks = Blueprint("bookmarks", __name__, url_prefix="/api/v1/bookmarks")
 
